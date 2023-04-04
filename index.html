@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<!-------------------------------- HOME ------------------------------------------->
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo" style="width:300px;margin-left: -70px;margin-top: -10px;">
+                <ul>
+                    <li><a href="#header"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-screwdriver-wrench"></i> Services</a></li>
+                    <li><a href="#portfolio"><i class="fa-solid fa-user"></i> Portfolio</a></li>
+                    <li><a href="#contact"><i class="fa-regular fa-address-book"></i> Contact</a></li>
+                    <i class="mob fa-solid fa-xmark"></i>
+                </ul>
+                <i class="mob fa-solid fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                    <h1>Hi,<br>I am <span>Palak</span> Yadav from India.</h1>
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <!----------------------------- ABOUT --------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                
+                <div class="about-col-1">
+                    <h1 class="sub-title">About me</h1>
+                    
+                    <p>
+                        Aspiring computer programmer with a BTech (Hons.) degree and proven problem-solving and troubleshooting skills.  
+                        Seeking an entry-level opportunity with an esteemed organization where I can utilize my skills and 
+                        enhance learning in the field of work. Capable of mastering new technologies. 
+                        Have the ability to manage and complete projects under pressure and meet deadlines on time.
+                    </p>
+
+                    <div class="tab-titles">
+                            <p class="tab-links active-link" 
+                            onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" 
+                            onclick="opentab('experience')">Experiences</p>
+                            <p class="tab-links" 
+                            onclick="opentab('education')">Education</p>
+                    </div>
+
+<!----------------------Skills---------------------->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Python | Java | C | C++</li>
+                            <li><span>Front-End Web Development</span><br>HTML |  CSS</li>
+                            <li><span>Machine Learning</span><br></li>
+                        </ul>
+<!-------------------Experience------------------->
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>Amity University Noida, Inhouse Project<br><span>Team Lead Developer</span><br>• Leading a team of three, we developed a machine learning model that makes use of a public database and predicts house prices in India's major metropolitan areas using a combination of extensive research and Python-based machine learning.
+                            </li>
+
+                            <li>Amity University Noida, Inhouse Project<br><span>Machine Learning Model</span><br>●	Built a Machine Learning Model that conducts a Personality Prediction test using Myers Briggs Test through extensive research work and Machine Learning application using Python.● Applied concepts of Machine Learning and Data Analysis approaches.
+                            </li>
+                        </ul>
+<!--------------------EDUCATION--------------------->
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            
+                            <li><i>2020-2024</i><br>Amity University, Noida, Uttar Pradesh<br><span>B. Tech (CSE), Hons in Artificial Intelligence and Machine Learning<BR>
+                                Current CGPA: 8.59</span><br></li>
+                            <li><i>2019</i><br>St. Francis Convent Inter College, Jhansi, Uttar Pradesh<br><span>Grade XII | ISC </span> </li>
+                            <li><i>2017</i><br>St. Francis Convent Inter College, Jhansi, Uttar Pradesh<br><span>Grade X | ICSE </span> </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <img align="right" src="phone-background.jpeg" width="400">
+                </div>
+
+            </div>
+
+        </div>
+       
+    </div>
+<!-------------------------------------SERVICES------------------------------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Software Engineer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quaerat. Atque, rem blanditiis numquam cupiditate neque temporibus unde quidem voluptatum ea necessitatibus, ad quasi sapiente? Numquam expedita beatae vitae amet.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Front End Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quaerat. Atque, rem blanditiis numquam cupiditate neque temporibus unde quidem voluptatum ea necessitatibus, ad quasi sapiente? Numquam expedita beatae vitae amet.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-sharp fa-solid fa-laptop"></i>
+                <h2>Machine Learning</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quaerat. Atque, rem blanditiis numquam cupiditate neque temporibus unde quidem voluptatum ea necessitatibus, ad quasi sapiente? Numquam expedita beatae vitae amet.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+<!---------------------------------------PORTFOLIO--------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>Snake Game</h3>
+                    <p>The objective of this python project is to build a snake game project. In this python project, the player has to move a snake so it touches the fruit. If the snake touches itself or the border of the game then the game will over.</p>
+                    <a href="#" ><i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                </div>
+
+            </div>
+
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Simple Calculator</h3>
+                    <p>The objective of this  project is to build a simple calculator project. </p>
+                    <a href="#" ><i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Work 3</h3>
+                    <p>Upcoming Project...................</p>
+                    <a href="#" ><i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!---------------------------------------  CONTACT -------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>yadavpalak2103@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91-9651001244</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <a href="/images/my-cv.pdf" download class="btn btn2">Download CV/Resume</a>
+            </div>
+            <div class="contact-right" align="right">
+                <form>
+                    <h1>Any Queries?</h1>
+                    <input type="text" name="Name" placeholder=" Enter Your Name" required>
+                    <input type="email" name="E-mail" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message" ></textarea> 
+                    <button type="submit" class="btn btn2">Submit</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+   
+</body>
+</html>

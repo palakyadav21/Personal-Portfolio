@@ -1,0 +1,362 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins','sans-serif';
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #ffff
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpeg);
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-position: left;
+    
+}
+.container{
+    padding: 10px 10% 20px;
+}
+
+nav{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+nav ul li{
+    display:inline-block;
+    padding-top: 15px;
+    list-style:none ;
+    margin: 10px 20px;
+    
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-style: italic;
+    position: relative;
+}
+/* this is used to make the list clickable/hoverable.*/
+nav ul li a::after{
+    content: '';
+    width: 0; 
+    height: 3px;
+    background: #b92d2d;
+    position: absolute;
+    left: 0%;
+    bottom:-6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 60px;
+}
+.header-text{
+    margin-left: 50%;
+    margin-top: 20%;
+    font-size: 25px;
+    /* text-align:left; */
+    font-style: italic;
+}
+.header-text h1{
+    font-size: 50px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color:#b92d2d;
+}
+/*--------------------------- ABOUT ------------------------------*/
+
+#about{
+    margin-bottom: 170px;
+    color: #ffffff;
+    text-align:left;
+    margin-top: 50px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+/*flex property is used to divide the page in columns , fle-basis is used to set the width of each column/col-1*/
+.about-col-2{
+    flex-basis: 50%;
+}
+.about-col-1{
+    flex-basis: 55%;
+}
+.sub-title{
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background: #9b6046d7;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+/* to align the skills , experiences and education horizontally*/
+.tab-titles{
+    display:flex;
+    margin: 20px 0px 40px;   /* top left/right bottom */
+    
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #b92d2d;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 70%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 40px 0;
+}
+.tab-contents ul li span{
+    color: #b92d2d;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+/* This will hide eveything under the skills,experience and education*/
+.tab-contents{
+    display: none;
+}
+/*show only the skills*/
+.tab-contents.active-tab{
+    display: block;
+}
+/*--------------------------- SERVICES------------------------------*/
+#services{
+    padding: 0px 0;
+    
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 100px;
+}
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 20px;
+    transition: background 0.5s,transform 0.5s;
+}
+.services-list div i{
+    font-size:50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size:30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-style: 'times new roman';
+}
+.services-list div a{
+    color:white;
+    text-decoration: none;
+    font-size: small;
+    margin-top: 20px;
+    display:inline-block;
+
+}
+.services-list div:hover{
+    background: #df8825da;
+    transform: translateY(-10px);
+}
+/*--------------------------- SERVICES------------------------------*/
+#portfolio{
+    padding: 50px 0;
+}
+.sub-title {
+    text-align: left;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 100px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow:hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display:block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),#690827) ;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    color: blue;
+    font-size: 18px;
+    margin-top: 20px;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    background: #fff;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+
+}
+.work:hover .layer{
+    height: 100%;;
+}
+.btn{
+    display: block;
+    margin: 50px auto; /*50px from top/bottom and auto from left/right*/
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:white;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background-color: #ff004f; 
+
+    
+}
+/*--------------------------------CONTACT-----------------------------------*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 10px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display:inline-block;
+    background: #ff004f;
+}
+.contact-right form{
+    margin-left: 20px 100px;
+    width:100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form btn2{
+    padding: 14px 60px;
+    font-family: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+form h1{
+    text-align: left;
+    margin-bottom: 15px;
+}
+/*---------------------------------CSS FOR SMALL SCREENS---------------------*/
+nav .mob{
+    display: none;
+}
+@media only screen and(max-width: 600px){
+    #header{
+        background-image: url(phone-background.jpeg);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;;
+
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+    
+}
