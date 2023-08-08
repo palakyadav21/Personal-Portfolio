@@ -2,6 +2,7 @@
 
 Personal portfolio sites are consistent that need to be taken care of throughout your work. It gives a convenient way for potential clients to view your work while also letting you expand on your skills/experiences and services. 
 
+<i>Welcome to my portfolio website! This website showcases my work, skills, and experiences as a [Your Profession] in the field of [Your Field]. It's built using modern web technologies to provide an engaging and informative user experience.</i>
 ## Features 📋<br>
 ⚡️ Fully Responsive<br>
 ⚡️ Valid HTML5 & CSS3<br>
