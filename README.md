@@ -55,8 +55,8 @@ Explore the various sections of the website to learn more about me, my projects,
 
 Feel free to get in touch:
 
-- Email: your@email.com
-- GitHub: github.com/yourusername
-- LinkedIn: linkedin.com/in/yourname
+- Email: yadavpalak2103@email.com
+- GitHub: https://github.com/palakyadav21
+- LinkedIn: linkedin.com/in/palakyadav
 
 
