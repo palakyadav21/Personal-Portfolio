@@ -17,11 +17,11 @@ Personal portfolio sites are consistent that need to be taken care of throughout
 - [Usage](#usage)
 - [Contact](#contact)
 
-  ## Introduction
+## Introduction
 
 My portfolio website is a representation of my journey and accomplishments in the world of Computer Science. It's designed to showcase my skills, projects, and achievements in an interactive and visually appealing manner.
 
-  ## Features
+## Features
 
 - **Home Page:** An introduction to who I am and what I do.
 - **Portfolio:** Displays a selection of my top projects with descriptions and links.
@@ -29,17 +29,17 @@ My portfolio website is a representation of my journey and accomplishments in th
 - **Resume:** A downloadable PDF version of my resume.
 - **Contact:** A contact form for visitors to reach out to me.
 
-  ## Technologies Used
+## Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
 
-  ## Getting Started
+## Getting Started
 
 To view my portfolio website locally, follow these steps:
 
-### Installation
+  ### Installation
 
 1. Clone this repository to your local machine:
 
@@ -47,11 +47,11 @@ To view my portfolio website locally, follow these steps:
 git clone https://github.com/yourusername/portfolio-website.git
 ```
 
-  ##Usage
+## Usage
 
 Explore the various sections of the website to learn more about me, my projects, and my skills. You can navigate using the navigation menu at the top of the page.
 
-  ##Contact
+## Contact
 
 Feel free to get in touch:
 
