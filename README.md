@@ -21,7 +21,7 @@ Personal portfolio sites are consistent that need to be taken care of throughout
 
 My portfolio website is a representation of my journey and accomplishments in the world of Computer Science. It's designed to showcase my skills, projects, and achievements in an interactive and visually appealing manner.
 
-## Features
+  ## Features
 
 - **Home Page:** An introduction to who I am and what I do.
 - **Portfolio:** Displays a selection of my top projects with descriptions and links.
